@@ -1,0 +1,11 @@
+#!/bin/sh
+
+tmpdir=$(mktemp -d /root/xblocks/xblock-XXXXXX)
+cd "${tmpdir}" \
+    && \
+grunt-init xblock \
+    && \
+npm install \
+    && \
+grunt \
+    ;
