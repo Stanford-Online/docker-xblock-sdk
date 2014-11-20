@@ -1,0 +1,6 @@
+#!/bin/sh
+
+/usr/local/bin/xblock-install-all
+
+cd /root/sdk && \
+./manage.py gruntserver 0:80
